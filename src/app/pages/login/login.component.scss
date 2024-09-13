@@ -1,0 +1,76 @@
+@import "../../../styles/variables.scss";
+
+.login {
+  background-color: $primary-color;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+  .login-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      img {
+        width: 153.37px;
+        height: 121.35px;
+        padding-bottom: 30px;
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .example-form-field {
+        width: 100%;
+
+        input {
+          border-radius: 32px;
+          width: 354px;
+          height: 63px;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .login-button {
+      background-color: $secondary-color;
+      border-radius: 32px;
+      margin-top: 2rem;
+      font-size: 1rem;
+      padding: 10px 0;
+      width: 354px;
+      height: 59px;
+    }
+  }
+
+  .create-account {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #b2b2b2;
+
+    span {
+      text-decoration: underline;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+}
+
+.password {
+  color: #b2b2b2;
+  font-size: 0.9rem;
+  padding-top: 10px;
+  text-decoration: underline;
+}

@@ -1,0 +1,19 @@
+<section class="car-section">
+  <div class="car-details">
+    <div *ngIf="data.car.length === 0">
+      <p>Não há carros disponíveis.</p>
+    </div>
+    <div *ngFor="let car of data.car" class="car-item">
+      <h2>{{ car.name }}</h2>
+      <img [src]="car.image" alt="{{ car.name }}">
+      <div class="details">
+        <p>Tipo: {{ car.type }}</p>
+        <p>Motor: {{ car.engine }}</p>
+        <p>Lugares: {{ car.seats }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="fechar">
+    <button (click)="closeDialog()">FECHAR</button>
+  </div>
+</section>

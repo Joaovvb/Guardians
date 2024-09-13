@@ -1,0 +1,22 @@
+.car-carousel {
+  display: flex;
+  overflow-x: scroll;
+  gap: 16px;
+  padding: 16px;
+}
+
+.car-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}

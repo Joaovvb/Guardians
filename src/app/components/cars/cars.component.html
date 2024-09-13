@@ -1,0 +1,14 @@
+<section>
+  <div class="car-carousel" *ngIf="cars.length > 0">
+    <div *ngFor="let car of cars" class="car-card">
+      <img [src]="car.image" alt="{{ car.name }}" class="car-image" />
+      <h4>{{ car.name }}</h4>
+      <p>{{ car.type }}</p>
+      <p>Motor {{ car.engine }}</p>
+      <p>{{ car.seats }} Lugares</p>
+    </div>
+  </div>
+  <div *ngIf="cars.length === 0">
+    <p>Não há carros disponíveis.</p>
+  </div>
+</section>

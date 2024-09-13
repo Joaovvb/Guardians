@@ -1,0 +1,29 @@
+<section>
+  <section class="home-section">
+    <div class="profile">
+      <img src="../../../assets/svg/marcos.svg" alt="Perfil de Marcos Silva" />
+      <h3>Olá, Marcos Silva</h3>
+    </div>
+    <div class="buttons">
+      <div class="search-container">
+        <mat-icon matPrefix class="search-icon">search</mat-icon>
+        <input [formControl]="searchControl" matInput type="text" placeholder="Buscar carro" />
+      </div>
+      <button class="filter" (click)="openFilterDialog()">
+        <mat-icon>filter_list</mat-icon>
+        Filtro
+      </button>
+    </div>
+    <section>
+      <h4>Últimas reservas</h4>
+      <app-cars></app-cars>
+    </section>
+    <section class="qr-code">
+      <button class="qr-code-button">
+        <img src="../../../assets/svg/qr-scanner.svg" alt="QR Code Scanner">
+        Acessar por QR code
+      </button>
+    </section>
+  </section>
+  <app-menu></app-menu>
+</section>

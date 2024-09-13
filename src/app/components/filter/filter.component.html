@@ -1,0 +1,37 @@
+<div class="busca">
+  <mat-icon matPrefix class="search-icon">search</mat-icon>
+  <h2>BUSCA</h2>
+</div>
+<div class="filter-header">
+  <button (click)="closeDialog()">CANCELAR</button>
+  <h3>FILTROS</h3>
+  <button (click)="clearFilters()">LIMPAR</button>
+</div>
+<div>
+  <h4>Tipos de carrocerias</h4>
+  <div class="filter-types">
+    <label *ngFor="let carType of carTypes">
+      <input type="checkbox" (change)="toggleCarType(carType)" />
+      {{ carType }}
+    </label>
+  </div>
+</div>
+
+<h4>Tipos de motores</h4>
+<div class="filter-group">
+  <button *ngFor="let engine of engines" [class.selected]="selectedEngines.includes(engine)"
+    (click)="toggleEngine(engine)">
+    {{ engine }}
+  </button>
+</div>
+
+<h4>Quantidade de lugares</h4>
+<div class="filter-seat">
+  <button *ngFor="let seat of seats" [class.selected]="selectedSeats.includes(seat)" (click)="toggleSeat(seat)">
+    {{ seat }}
+  </button>
+</div>
+
+<div class="actions">
+  <button (click)="applyFilters()">APLICAR FILTRO</button>
+</div>

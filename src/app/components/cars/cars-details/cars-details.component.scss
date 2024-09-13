@@ -1,0 +1,63 @@
+@import "../../../../styles/variables.scss";
+
+.full-screen-dialog {
+  .mat-dialog-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+    padding: 0;
+  }
+
+  button.mat-dialog-close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+}
+
+.car-details {
+  overflow-y: auto;
+  height: calc(100% - 105px);
+  width: 95%;
+  align-self: center;
+}
+
+.car-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.fechar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  button {
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 39px;
+    color: white;
+    display: flex;
+    height: 70.91px;
+    justify-content: center;
+    width: 290px;
+  }
+}
+
+.car-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.details {
+  text-align: justify;
+  font-size: 18px;
+  padding: 10px 17px;
+  color: $primary-color;
+}
